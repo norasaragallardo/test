@@ -9,7 +9,7 @@ var txt = [
     "================================================",
     "Priority 1 // local / scanning...",
     "scanning ports...",
-    "BACKDOOR FOUND (23.45.23.12.00000000)",
+    "BACKDOOR FOUND (23.45.23.12.00000000)"+contador,
     "BACKDOOR FOUND (13.66.23.12.00110000)",
     "BACKDOOR FOUND (13.66.23.12.00110044)",
     "...",
@@ -68,7 +68,7 @@ function updateScreen() {
 
 document.addEventListener('DOMContentLoaded', function() {
     // Verificar si hay un valor guardado en el almacenamiento local
-    let contador = localStorage.getItem('visitas');
+    var contador = localStorage.getItem('visitas');
 
     // Si no hay un contador en el almacenamiento local, establecerlo a 0
     if (!contador) {
