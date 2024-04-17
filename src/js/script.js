@@ -9,7 +9,7 @@ var txt = [
     "================================================",
     "Priority 1 // local / scanning...",
     "scanning ports...",
-    "BACKDOOR FOUND (23.45.23.12.00000000)"+contador,
+    "BACKDOOR FOUND (23.45.23.12.00000000)",
     "BACKDOOR FOUND (13.66.23.12.00110000)",
     "BACKDOOR FOUND (13.66.23.12.00110044)",
     "...",
