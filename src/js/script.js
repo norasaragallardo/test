@@ -65,3 +65,23 @@ function updateScreen() {
     }
     c.appendChild(docfrag);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Verificar si hay un valor guardado en el almacenamiento local
+    let contador = localStorage.getItem('visitas');
+
+    // Si no hay un contador en el almacenamiento local, establecerlo a 0
+    if (!contador) {
+        contador = 0;
+    }
+
+    // Mostrar el contador en la página
+    document.getElementById('contador').textContent = contador;
+
+    // Incrementar el contador en 1 cada vez que la página se carga
+    contador++;
+    console.warn("c%Ingresos a la Pagina  " + contador , "color: blue; font-size: 40px")
+    // Guardar el nuevo valor del contador en el almacenamiento local
+    localStorage.setItem('visitas', contador);
+});
+
